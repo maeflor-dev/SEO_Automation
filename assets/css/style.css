@@ -1,0 +1,42 @@
+/* assets/css/style.css */
+
+:root {
+    --fsp-primary: #0d6efd;
+    --fsp-dark: #212529;
+    --fsp-bg-light: #f8f9fa;
+}
+
+body {
+    background-color: var(--fsp-bg-light);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    border-bottom: 3px solid var(--fsp-primary);
+}
+
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--fsp-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.list-group-item {
+    padding: 1rem 1.25rem;
+    border-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Spinner and loader enhancements */
+#loader .spinner-border {
+    width: 3.5rem;
+    height: 3.5rem;
+}
